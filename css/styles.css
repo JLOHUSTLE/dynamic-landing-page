@@ -12,11 +12,11 @@ body {
     justify-content: center;
     text-align: center;
     height: 100vh;
-    background: linear-gradient(blueviolet, mediumslateblue);
+    background-color: #0f0f0f;
 }
 
 #time {
-    font-size: 8rem;
+    font-size: 9rem;
 }
 
 h1 {
@@ -24,8 +24,8 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 0.5rem;
-    opacity: 0.6;
+    margin-bottom: 1rem;
+    /*opacity: 0.6;*/
 }
 
 @media(max-width: 700px) {
