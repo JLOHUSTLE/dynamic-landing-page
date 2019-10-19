@@ -38,15 +38,17 @@ function setBgGreet() {
         // Morning
         document.body.style.backgroundImage = "url('img/morning.jpg')";
         greeting.textContent = 'Good Morning';
+        document.body.style.color = 'white';
     } else if(hour < 18) {
         // Afternoon
         document.body.style.backgroundImage = "url('img/afternoon.jpg')";
         greeting.textContent = 'Good Afternoon';
+        document.body.style.color = 'white';
     } else {
         // Evening
         document.body.style.backgroundImage = "url('img/evening.jpg')";
         greeting.textContent = 'Good Evening';
-        document.body.style.color = 'white';
+        document.body.style.color = 'black';
 
     }
 }
@@ -63,8 +65,8 @@ function getName(e) {
 // Set Name
 function setName(e) {
     if(e.type === 'keypress') {
-    //Make Sure enter is pressed
-        if(e.which == 13 || e.keyCode == 13) {
+    // Make Sure enter is pressed
+        if(e.which === 13 || e.keyCode === 13) {
             localStorage.setItem('name', e.target.innerText);
             name.blur();
         }
@@ -85,7 +87,7 @@ function getFocus(e) {
 function setFocus(e) {
     if(e.type === 'keypress') {
         //Make Sure enter is pressed
-        if(e.which == 13 || e.keyCode == 13) {
+        if(e.which === 13 || e.keyCode === 13) {
             localStorage.setItem('focus', e.target.innerText);
             name.blur();
         }
