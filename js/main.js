@@ -48,7 +48,7 @@ function setBgGreet() {
         // Evening
         document.body.style.backgroundImage = "url('img/evening.jpg')";
         greeting.textContent = 'Good Evening';
-        document.body.style.color = 'black';
+        document.body.style.color = 'white';
 
     }
 }
@@ -86,7 +86,7 @@ function getFocus(e) {
 // Set Focus
 function setFocus(e) {
     if(e.type === 'keypress') {
-        //Make Sure enter is pressed
+    // Make Sure enter is pressed
         if(e.which === 13 || e.keyCode === 13) {
             localStorage.setItem('focus', e.target.innerText);
             name.blur();
