@@ -78,7 +78,7 @@ function setName(e) {
 // Get Focus
 function getFocus(e) {
     if (localStorage.getItem('focus') === null) {
-        focus.textContent = '[Enter Focus]';
+        focus.textContent = '[Enter Your Focus]';
     } else {
         focus.textContent = localStorage.getItem('focus');
     }
@@ -103,7 +103,7 @@ focus.addEventListener('keypress', setFocus);
 focus.addEventListener('blur', setFocus);
 
 
-// Run
+// Run 
 showTime();
 setBgGreet();
 getName();
